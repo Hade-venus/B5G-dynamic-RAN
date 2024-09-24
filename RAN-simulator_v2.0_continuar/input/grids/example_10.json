@@ -1,0 +1,337 @@
+{
+	"general": {
+		"resolution[s]": 60,
+		"num_steps": 1440
+	},
+
+	"options": {
+		"A": {
+			"split_FH": 0,
+			"split_MH": 0,
+			"DU": 0,
+			"CU": 0
+		},
+		"B_2": {
+			"split_FH": 0,
+			"split_MH": 2,
+			"DU": 0,
+			"CU": 2
+		},
+		"B_4": {
+			"split_FH": 0,
+			"split_MH": 4,
+			"DU": 0,
+			"CU": 2
+		},
+		"C_2": {
+			"split_FH": 7.2,
+			"split_MH": 2,
+			"DU": 1,
+			"CU": 2
+		},
+		"C_4": {
+			"split_FH": 7.2,
+			"split_MH": 4,
+			"DU": 1,
+			"CU": 2
+		},
+		"D_7.2": {
+			"split_FH": 7.2,
+			"split_MH": 0,
+			"DU": 2,
+			"CU": 2
+		},
+		"E_2": {
+			"split_FH": 2,
+			"split_MH": 0,
+			"DU": 0,
+			"CU": 1
+		},
+		"E_4": {
+			"split_FH": 4,
+			"split_MH": 0,
+			"DU": 0,
+			"CU": 1
+		},
+		"F": {
+			"split_FH": 7.2,
+			"split_MH": 0,
+			"DU": 1,
+			"CU": 1
+		}
+	},
+	"grid": {
+		"mode": "auto",
+		"components":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+		"coord_x":[],
+		"coord_y":[],
+		"components_list": [{
+			"profile_mean": "/input/profiles/profile2.csv",
+			"profile_var": 0.04,
+			"profile_min": 0.2,
+			"profile_max": 1.2,
+			"shift_max": 0,
+			"period": 1440,
+			"noise": 0,
+			"interpl": "spline"
+		}]
+
+	},
+
+	"antennas": {
+		"mBS": {
+			"type": "micro",
+			"coord": {
+				"x": 0,
+				"y": 0
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+
+			},
+			"active": 1,
+			"option": "B_2"
+
+
+		},
+		"mBS_1": {
+			"type": "micro",
+			"coord": {
+				"x": 200,
+				"y": 0
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+			},
+			"active": 1,
+			"option": "B_4"
+		},
+		"mBS_2": {
+			"type": "micro",
+			"coord": {
+				"x": 400,
+				"y": 0
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+			},
+			"active": 1,
+			"option": "C_2"
+		},
+		"mBS_3": {
+			"type": "micro",
+			"coord": {
+				"x": 0,
+				"y": 200
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+			},
+			"active": 1,
+			"option": "C_4"
+
+
+		},
+		"mBS_4": {
+			"type": "micro",
+			"coord": {
+				"x": 200,
+				"y": 200
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+			},
+
+			"active": 1,
+			"option": "D_7.2"
+
+		},
+		"mBS_5": {
+			"type": "micro",
+			"coord": {
+				"x": 400,
+				"y": 200
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+			},
+
+			"active": 1,
+			"option": "E_2"
+		},
+		"mBS_6": {
+			"type": "micro",
+			"coord": {
+				"x": 0,
+				"y": 400
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+			},
+
+			"active": 1,
+			"option": "E_4"
+		},
+		"mBS_7": {
+			"type": "micro",
+			"coord": {
+				"x": 200,
+				"y": 400
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+			},
+
+			"active": 1,
+			"option": "F"
+		},
+		"mBS_8": {
+			"type": "micro",
+			"coord": {
+				"x": 400,
+				"y": 400
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Mb/s]": 120,
+				"constant": 2000
+			},
+			"active": 1,
+			"option": "A"
+		}
+	}
+
+}

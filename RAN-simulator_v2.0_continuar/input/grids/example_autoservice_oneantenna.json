@@ -1,0 +1,160 @@
+{
+	"general": {
+		"resolution[s]": 60,
+		"num_steps": 2880,
+		"skip": 1440
+	},
+	
+	"RANcontrol": {
+    	"mode": "static",
+        "optionsRANmode": ["static","dynamic","slicing","dynamic_slicing"],
+        "ONOFFswitching":{
+             "load_thr_min": 0,
+             "load_thr_max": 1
+        },
+		"dynamicSlicing": {
+			"load_low": 0.1,
+			"load_high": 0.8
+		}
+	},
+	"slicing": {
+		"n": 3,
+		"services": {
+			"eMBB": 0,
+			"URLLC": 1,
+			"other": 0
+		},
+		"options": ["D_7.2","E_2"],
+		"size": [0.5, 0.5]
+	},
+	"options": {
+		"A": {
+			"split_FH": 0,
+			"split_MH": 0,
+			"DU": 0,
+			"CU": 0
+		},
+		"B_2": {
+			"split_FH": 2,
+			"split_MH": 2,
+			"DU": 0,
+			"CU": 2
+		},
+		"B_4": {
+			"split_FH": 4,
+			"split_MH": 4,
+			"DU": 0,
+			"CU": 2
+		},
+		"C_2": {
+			"split_FH": 7.2,
+			"split_MH": 2,
+			"DU": 1,
+			"CU": 2
+		},
+		"C_4": {
+			"split_FH": 7.2,
+			"split_MH": 4,
+			"DU": 1,
+			"CU": 2
+		},
+		"D_7.2": {
+			"split_FH": 7.2,
+			"split_MH": 0,
+			"DU": 2,
+			"CU": 2
+		},
+		"E_2": {
+			"split_FH": 2,
+			"split_MH": 2,
+			"DU": 0,
+			"CU": 1
+		},
+		"E_4": {
+			"split_FH": 4,
+			"split_MH": 4,
+			"DU": 0,
+			"CU": 1
+		},
+		"F": {
+			"split_FH": 7.2,
+			"split_MH": 0,
+			"DU": 1,
+			"CU": 1
+		}
+	},
+
+
+	
+	"grid": {
+		"mode": "auto",
+		"components": [0, 1],
+		"coord_x": [66.33165829145727, 66.01225322649748],
+		"coord_y": [0.0, 6.501639459046229],
+		"components_list": [
+			{
+				"UE_norm_mean": "/input/profiles/profile_eMBB.csv",
+				"UE_norm_var": 0.1,
+				"UE_abs_min": 1,
+				"UE_abs_max": 15,
+				"UE_abs_noise":0,
+				"UE_shift_max": 0,
+				"period": 1440,
+				"interpl": "spline",
+				"service":{
+					"name": "4K",
+					"type":"eMBB",
+					"UL[Mb/s]":25,
+					"DL[Mb/s]":0
+				}
+			},
+			{
+				"UE_norm_mean": "/input/profiles/profile_URLLC.csv",
+				"UE_norm_var": 0.1,
+				"UE_abs_min": 1,
+				"UE_abs_max": 15,
+				"UE_abs_noise":0,
+				"UE_shift_max": 0,
+				"period": 1440,
+				"interpl": "spline",
+				"service":{
+					"name": "V2V",
+					"type":"URLLC",
+					"UL[Mb/s]":10,
+					"DL[Mb/s]":10
+				}
+			
+			}
+		]
+	},
+	"antennas": {
+		"a0": {
+			"type": "micro",
+			"coord": {
+				"x": 65.0,
+				"y": 10.0
+			},
+			"params": {
+				"capacity[Gb/s]": 1.5,
+				"powerMax[dBm]": 43,
+				"radius[m]": 100,
+				"peakRate[Gb/s]": 0.15,
+				"bandwidth[MHz]": 100,
+				"refBandwidth[MHz]": 20,
+				"nLayers": 8,
+				"nRefLayers": 6,
+				"ModulationOrder": 8,
+				"refModulationOrder": 2,
+				"signalingBitrate[Gb/s]": 0.016,
+				"nSubcarrers": 6000,
+				"nSymbols": 14,
+				"nIQbits": 10,
+				"MACinformation[Gb/s]": 120,
+				"constant": 2000
+			},
+			"active": 1,
+			"option": "D_7.2",
+			"neighbor": []
+		}
+	}
+}
